@@ -1,0 +1,277 @@
+
+
+
+body {
+    height: 100vh;
+    width: 100vw; 
+    padding: 0;
+    margin: 0;
+    overflow: hidden; 
+}
+
+article {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.125rem; 
+    line-height: 1.6;
+}
+
+header {
+    margin: 0; 
+    padding: 0; 
+    background-color: white; 
+}
+
+h1 {
+    margin: 1.5rem 0rem 0rem 0rem;
+    padding: 0;
+
+}
+
+h2 {
+    font-size: 22px; 
+    font-weight: 200;
+    margin: 0.1rem 0rem 1rem ; 
+    padding: 0;  
+}
+
+
+a {
+    text-decoration: none; 
+}
+
+header#big-left{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0.8rem 1rem -0.5rem 1rem; 
+}
+
+
+span#whitespace {
+    white-space: pre;   
+}
+
+hr.horizontal { 
+    width: 100%;
+    color: lightgrey; 
+}
+
+
+
+#topnav {
+    height: 3rem; 
+    width: 100%; 
+    background-color: darkblue; 
+}
+
+#mainnav {
+    display: inline-block; 
+    
+}
+
+#pagenav {
+    position: absolute; 
+    width: 100%;
+    left: 2%;
+    height: 4%;
+    display: inline;
+    background-color:whitesmoke; 
+}
+
+.page-container{ 
+    display:flex;
+    height: 100%;
+    width:  100%;
+    margin: 0rem 0rem 0rem 1rem; 
+    background-color: whitesmoke; 
+    border-left: lightgrey; 
+    border-left-style: solid; 
+    border-width: thin;
+}
+
+.container {
+    
+}
+
+.link {
+    color: darkblue; 
+}
+
+
+#container-big-right {
+    
+}
+
+#container-big-left {
+    position: relative;
+    top:5%;
+    left: 1%;  
+    margin: 0% 0% 0% 0%;
+    height:88%;
+    width: 38%;
+    border-style:solid;
+    border-color: lightgrey; 
+    border-width: thin; 
+    background-color: white;
+}
+
+#container-small {
+    display: flex; 
+    position: relative;
+    top: 0%; 
+    height:70%;
+    width: 100%;
+    margin: 1rem 0rem; 
+    background-color: white;
+}   
+
+#container-smaller {
+    height: 88%;
+    min-width: 40%;
+    border-style: solid; 
+    border-width: thin; 
+    border-color: lightgrey;
+    margin: 1.5rem 1.2rem; 
+    background-color: white; 
+}
+ 
+article#main {
+    text-align: left; 
+    height: 100%;
+    max-width: 55%;
+    margin: 0rem 1rem 1rem 1rem; 
+}
+
+img#second {
+    height: 35%;
+    min-width:85%;
+    margin: 1rem 1rem 4rem 1.5rem;
+    object-fit: cover;  
+}
+
+div#image-text{
+    position: relative; 
+    bottom: 12%;
+    left: 9%;
+    height: 55%;
+    width: 85%;
+    background-color: white; 
+    font-size: 13.5px; 
+    font-family:sans-serif;
+}
+
+
+
+p#image-tag {
+    text-align: left; 
+   
+}
+
+p#media {
+    margin: 0;
+    padding: 0;
+   text-align: center;  
+}
+
+span#Times{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-style: italic;  
+
+}
+
+p#credits {
+    font-family: sans-serif; 
+    font-size: 12px; 
+}
+
+p#pagenav-text {
+    font-family: sans-serif;
+    font-size: 14px; 
+}
+
+
+ul#image-description {
+    list-style-type: none;
+    display: inline; 
+}
+
+li#image-description {
+    display: inline; 
+}
+
+span#small-black-circle  {
+    position: relative; 
+    font-size: 5px;
+    bottom: 3px;
+}
+
+#box-link {
+    position: relative; 
+    left: 15%;
+    bottom: 18.5%; 
+    border-style: solid;
+    border-radius: 10px;  
+    border-width: thin; 
+    border-color: lightgrey; 
+    height: 7%;
+    width: 70%;
+   
+}
+
+#box-link-flex-1 {
+    display: inline-block; 
+    border-style: solid;
+    border-radius: 10px; 
+    border-color:lightgrey;
+    border-width: thin; 
+    min-height: 1.8rem;
+    max-width: 4rem;
+}
+
+#box-link-flex-2 {
+    display: inline-block; 
+    border-style: solid;
+    border-radius: 10px;  
+    border-color:lightgrey;
+    border-width: thin;
+    min-height: 1.8rem;
+    max-width: 4rem; }
+
+#box-link-flex-3 {
+    display: inline-block; 
+    border-style: solid;
+    border-radius: 10px;  
+    border-color:lightgrey;
+    border-width: thin;
+    min-height: 1.8rem;
+    max-width: 4rem;
+}
+#box-link-flex-4 {
+    display: inline-block; 
+    border-style: solid;
+    border-radius: 10px;  
+    border-color:lightgrey;
+    border-width: thin;
+    min-height: 1.8rem;
+    max-width: 4rem;
+}
+#box-link-flex-5 {
+    display: inline-block; 
+    border-style: solid;
+    border-radius: 10px;  
+    border-color:lightgrey;
+    border-width: thin; 
+    min-height: 1.8rem;
+    max-width: 4rem;
+}
+*/
+
+#box-link a{
+    position: relative; 
+    top: 20%;
+    left: 5%; 
+    text-align: center;
+    font-family: sans-serif; 
+    font-size: 13px;
+    font-weight: bold; 
+
+}
