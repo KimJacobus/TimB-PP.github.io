@@ -63,9 +63,15 @@ hr.horizontal {
 }
 
 #mainnav {
-    display: inline-block; 
-    
+    display: flex; 
+    font-family: sans-serif; 
+    font-weight: bold; 
+    font-size: 11px;
+    letter-spacing: -0.5px; 
+    line-height: -6px;
+    color:#0f3f69;      
 }
+
 
 #pagenav {
     position: absolute; 
@@ -91,20 +97,36 @@ hr.horizontal {
 }
 
 .link {
-    color: darkblue; 
+    color: #14599d; 
 }
 
+.link-icon {
+    color: #14599d;
+    height: 21px;
+    width: 18px; 
+}
 .link-content {
-    position: relative; 
-    top: 18%;
-    left: 6%;
+    position: relative;
+    top: 0.5rem;
     letter-spacing: -0.5px;
     font-family: sans-serif;
     font-size: 13px;
     font-weight: bold; 
+    padding: 4rem 1rem; 
 
 }
 
+.icon{
+    height: 1rem;
+    width: 1rem; 
+}
+
+#iconbutton{
+    position: relative; 
+    top: 0.2rem;
+    padding: 0.1rem;
+    font-stretch: ultra-expanded;  
+}
 
 #container-big-right {
     
@@ -227,51 +249,20 @@ span#small-black-circle  {
    
 }
 
-#box-link-flex-1 {
-    display: inline-block; 
+#box-link-flex-1, #box-link-flex-2, #box-link-flex-3, #box-link-flex-4, #box-link-flex-5{
+    display: flex; 
     border-style: solid;
     border-radius: 10px; 
+    border-width: thin;
     border-color:lightgrey; 
-    min-height: 1.8rem;
-    max-width: 4rem;
+    min-height: auto;
+    max-width: auto;
+    margin: 0rem 0.2rem; 
+    padding: 0.3rem 0.6rem; 
+    text-align: center;
 }
 
-#box-link-flex-2 {
-    display: inline-block; 
-    border-style: solid;
-    border-radius: 10px;  
-    border-color:lightgrey;
-    border-width: thin;
-    min-height: 1.8rem;
-    max-width: 4rem; }
 
-#box-link-flex-3 {
-    display: inline-block; 
-    border-style: solid;
-    border-radius: 10px;  
-    border-color:lightgrey;
-    border-width: thin;
-    min-height: 1.8rem;
-    max-width: 4rem;
-}
-#box-link-flex-4 {
-    display: inline-block; 
-    border-style: solid;
-    border-radius: 10px;  
-    border-color:lightgrey;
-    border-width: thin;
-    min-height: 1.8rem;
-    max-width: 4rem;
-}
-#box-link-flex-5 {
-    display: inline-block; 
-    border-style: solid;
-    border-radius: 10px;  
-    border-color:lightgrey;
-    border-width: thin; 
-    min-height: 1.8rem;
-    max-width: 4rem;
-}
 */
 
 #box-link a{
@@ -285,11 +276,12 @@ span#small-black-circle  {
 
 }
 
+/*half screen*/
 
-@media only screen and (max-width: 1700px) {
+
+@media only screen and (min-width: 801px) and (max-width: 1700px) {
 
     body {
-        background-color: red; 
         overflow:scroll;
     }
 
@@ -298,7 +290,6 @@ span#small-black-circle  {
         text-align: center;
         text-align: justify;
         min-width: 90%; 
-
         left: 0rem; 
           
     }
@@ -314,15 +305,29 @@ span#small-black-circle  {
 
     #pagenav {
         position: absolute; 
+        margin: 0.5rem 0rem; 
         height: 4%;
         width: 50%;
-        left: 15%;
-        background-color: red; 
+        left: 2%;
+    }
+
+    #container-big-left {
+        position: relative;
+        top:5%;
+        left: 1%;  
+        margin: 0% 0% 0% 0%;
+        height:98%;
+        width: 38%;
+        border-style:solid;
+        border-color: lightgrey; 
+        border-width: thin; 
+        background-color: white;
     }
 
     #container-smaller {
         position: absolute; 
-        bottom: 12rem; 
+        left: 22rem;
+        bottom: 17.1rem; 
         height: 88%;
         min-width: 40%;
         border-style: solid; 
@@ -374,19 +379,33 @@ span#small-black-circle  {
 
     .page-container {
         position: absolute; 
+        top: 15rem;
         right: 0.1rem; 
         height: 100%;
         width: 100%;
     }
+    .link-content {
+        letter-spacing: -0.5px;
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: bold; 
+        padding: 4rem 2rem; 
+    
+    }
 
     #pagenav {
         position: absolute; 
-        height: 4%;
+        height: 50%;
         width: 50%;
-        left: 15%;
-        background-color:whitesmoke; 
+        bottom: 36rem;
+        left: 1.5rem; 
     }
-
+    #mainnav {
+        display: inline-block;
+        min-width: 90%;
+        text-align: center;
+        align-items: center;
+    }
 
 
     #container-smaller {
@@ -426,5 +445,17 @@ span#small-black-circle  {
         background-color: white;
     }
 
+    #box-link-flex-1, #box-link-flex-2, #box-link-flex-3, #box-link-flex-4, #box-link-flex-5{
+        display: flex; 
+        border-style: solid;
+        border-radius: 10px; 
+        border-width: thin;
+        border-color:lightgrey; 
+        max-height: 2rem;
+        max-width: auto;
+        margin: 0.2rem 0.2rem; 
+        padding: 0.3rem 0.6rem; 
+        text-align: center;
+    }
      
 }
