@@ -62,6 +62,44 @@ hr.horizontal {
     background-color: #071c2e; 
 }
 
+#top-flex {
+    display: flex;
+    position: relative; 
+    top: 0.5rem;  
+    left: 1rem; 
+
+    flex-direction: row; 
+    margin: 0rem 0rem 0rem 11rem;
+ 
+}
+
+#top-img {
+    position: absolute; 
+    height: 100px;  
+    width: 23rem; 
+    background-image: url(https://cdn.britannica.com/mendel/eb-logo/MendelNewThistleLogo.png);
+    background-repeat: no-repeat; 
+    background-size: 11rem;
+    margin: 0.5rem 1rem 0rem 0.5rem;
+}
+
+#top-text{
+    flex: 0 0px 100px 10px;
+    font-size: 0.85rem; 
+    font-family: sans-serif;
+    margin: 0.9rem 0rem 0rem 2rem;  
+    color: white;
+}
+
+#top-text a{
+    color: white; 
+
+}
+
+#top-text a:hover{
+    text-decoration-line: underline; 
+}
+
 #mainnav {
     display: flex; 
     font-family: sans-serif; 
@@ -263,7 +301,7 @@ span#small-black-circle  {
 }
 
 
-*/
+ 
 
 #box-link a{
     position: relative; 
@@ -274,6 +312,28 @@ span#small-black-circle  {
     font-size: 13px;
     font-weight: bold; 
 
+}
+
+#arrow {
+    position: relative;
+    height: 1rem;
+    width: 1rem;  
+    bottom: 1rem;
+    left: 11rem;  
+}
+
+#search-icon {
+    position: absolute; 
+    left: 5.9rem;   
+    height: 1.2rem;
+    width: 1.2rem;
+    color: white;
+}
+
+#search-bar{
+    position: absolute; 
+    left: 0.4rem; 
+    bottom: 0.1px; 
 }
 
 /*half screen*/
@@ -311,6 +371,19 @@ span#small-black-circle  {
         left: 2%;
     }
 
+
+    #mainnav {
+        display: inline-block; 
+        font-family: sans-serif; 
+        font-weight: bold; 
+        min-width: 10%;
+        font-size: 11px;
+        letter-spacing: -0.5px; 
+        line-height: -6px;
+        color:#0f3f69;      
+    }
+
+
     #container-big-left {
         position: relative;
         top:5%;
@@ -327,7 +400,7 @@ span#small-black-circle  {
     #container-smaller {
         position: absolute; 
         left: 22rem;
-        bottom: 17.1rem; 
+        bottom: 21rem; 
         height: 88%;
         min-width: 40%;
         border-style: solid; 
@@ -335,6 +408,54 @@ span#small-black-circle  {
         border-color: lightgrey;
         margin: 1.5rem 1.2rem; 
         background-color: white; 
+    }
+    #box-link-flex-1, #box-link-flex-2, #box-link-flex-3, #box-link-flex-4, #box-link-flex-5{
+        display: inline-block; 
+        border-style: solid;
+        border-radius: 10px; 
+        border-width: thin;
+        border-color:lightgrey; 
+        min-height: 2rem;
+        min-width: 3rem;
+        margin: 0.2rem 0.2rem; 
+        padding: 0.3rem 0.6rem; 
+        text-align: center;
+    }
+    .link-content {
+        text-align: center; 
+        
+    
+    }
+
+    #box-link {
+        position: relative; 
+        right: 100%;
+        bottom: 18.5%; 
+        border-style: solid;
+        border-radius: 10px;  
+        border-width: thin; 
+        border-color: lightgrey; 
+        height: 7%;
+        max-width: 14rem;
+       
+    }
+
+    #box-link a{
+        position: relative; 
+        top: 20%;
+        left: 0%; 
+        text-align: center;
+        font-family: sans-serif; 
+        font-size: 10px;
+        font-weight: bold; 
+    
+    }
+
+    #arrow {
+        display: none;
+        position:absolute;
+
+        right: 100rem; 
     }
 
 
@@ -382,7 +503,7 @@ span#small-black-circle  {
         top: 15rem;
         right: 0.1rem; 
         height: 100%;
-        width: 100%;
+        max-width: 100%;
     }
     .link-content {
         letter-spacing: -0.5px;
@@ -436,9 +557,6 @@ span#small-black-circle  {
         left: 1em;  
         height:100%;
         min-width: 90%;
-
-
-
         border-style:solid;
         border-color: lightgrey; 
         border-width: thin; 
@@ -457,5 +575,21 @@ span#small-black-circle  {
         padding: 0.3rem 0.6rem; 
         text-align: center;
     }
-     
+
+    #topnav {
+        max-width: 100%;
+    }
+
+    #top-flex :nth-child(2) {
+        display: none; 
+    }
+    #top-flex :nth-child(3) {
+        display: none; 
+    }
+    #top-flex :nth-child(4) {
+        display: none; 
+    }
+    #top-flex :nth-child(5) {
+        display: none; 
+    }
 }
